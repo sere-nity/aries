@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const EXAMPLE_QUESTIONS = [
-    "How is AI affecting the animation industry?",
     "What's happening with electric vehicle sales?",
     "How are interest rates affecting house prices?",
     "What's new in renewable energy?",
