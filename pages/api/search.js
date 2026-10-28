@@ -11,7 +11,8 @@ async function createSearchQuery(req, res) {
         const { q } = await interpretQuestion(data.question)
         const result = await searchNews({q})
         res.status(200).json({ q, ...result });
-    } catch {
+    } catch (error) {
+        console.error(error);
         res.status(502).json({
             error: "Unable to fetch articles"
         }); 
